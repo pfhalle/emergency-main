@@ -1,81 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/skema.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> LOGO-TYPE </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>What about your bad makeup day?</h1>
+    <section id="form-section">
+      <article id="form-info">
+        <h2>Happend to you to?</h2>
+        <p>To have a bad makeup day is not fun, shere your exspirience with others ogd shere some good tips!!</p>
+      </article>
+      <form id="webform"></form>
+    </section>
+    <section id="form-summary">
+      <h2>Summary</h2>
+      <article>
+        <p class="placeholder">Opsummering</p>
+      </article>
+    </section>
+    <section>
+      <h2>Fyll ut feltene nedenfor:</h2>
+      <form aria-label="sign up form">
+
+        <div class="form-group">
+          <label for="first_name">First name</label>
+          <input type="text" id="first_name" name="first_name" aria-describedby="fname-error" required />
+          <p class="error-message" id="fname-error">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="last_name">Last name</label>
+          <input type="text" id="last_name" name="last_name" aria-describedby="lname-error" required />
+          <p class="error-message" id="lname-error">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" aria-describedby="email-error" required />
+          <p class="error-message" id="email-error">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <p id="password-instruction">Password must be at least 8 characters</p>
+          <input type="password" id="password" name="password" aria-describedby="password-instruction password-error"
+            required />
+          <p class="error-message" id="password-error">Please enter a value</p>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend>Hvad gikk galdt?</legend>
+            <div>
+              <label for="foundation">
+                <input type="checkbox" value="foundation" name="language" id="foundation" aria-describedby="lang-msg"
+                  required>
+                Feil foundation-farge
+              </label>
+              <label for="mascara">
+                <input type="checkbox" value="mascara" name="language" id="mascara" aria-describedby="lang-msg">
+                Mascara-overdose
+              </label>
+              <label for="eyeliner">
+                <input type="checkbox" value="eyeliner" name="language" id="eyeliner" aria-describedby="lang-msg">
+                Eyeliner-kaos
+              </label>
+
+              <label for="altsammen">
+                <input type="checkbox" value="altsammen" name="language" id="altsammen" aria-describedby="lang-msg">
+                Alt på en gang...
+              </label>
+            </div>
+          </fieldset>
+          <p id="lang-msg" class="error-message">Please select a language</p>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend>Krise grad!</legend>
+            <div>
+              <label for="mild">
+                <input type="checkbox" value="mild" name="language" id="mild" aria-describedby="lang-msg" required>
+                Mild
+              </label>
+              <label for="kritisk">
+                <input type="checkbox" value="kritisk" name="language" id="kritisk" aria-describedby="lang-msg">
+                Kritisk
+              </label>
+              <label for="panikk">
+                <input type="checkbox" value="panikk" name="language" id="panikk" aria-describedby="lang-msg">
+                Full panikk
+              </label>
+            </div>
+          </fieldset>
+          <p id="lang-msg" class="error-message">Please select a language</p>
+        </div>
+
+        <div class="form-group">
+          <label for="ferfaringer">Egne erfaringer?</label>
+          <input type="text" id="erfaringer" name="erfaringer" aria-describedby="fname-error" required />
+          <p class="error-message" id="fname-error">Send gjerne egne erfaringer!!</p>
+        </div>
+
+        <button> Send et sminkenødrop!!!</button>
+
+      </form>
+
+    </section>
+    <section class="output">
+
+      <h2>Opsamling (output)</h2>
+
+      <div>
+        <p>First name: <span id="first_name_output"></span></p>
+        <p>Last name: <span id="last_name_output"></span></p>
+        <p>Email: <span id="email_output"></span></p>
+        <p>Password: <span id="password_output"></span></p>
+        <p>Favourite Languages: <span id="lang_output"></span></p>
+        <p>Terms accepted: <span id="terms_output"></span></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/register.js"></script>
+</body>
+
 </html>
