@@ -21,10 +21,10 @@ function handleSubmit(event) {
   const lastName = formData.get("last_name");
   const email = formData.get("email");
   const password = formData.get("password")
-//   const lang = formData.getAll("language").join(", ")
+  const lang = formData.getAll("language").join(", ")
   const terms = formData.get("accept_terms");
   
-  const 
+  
 
   // 2. Vis værdierne i de rigtige output-felter
   firstNameOutput.textContent = firstName
@@ -37,5 +37,3 @@ function handleSubmit(event) {
   form.reset();
 }
 
-form.addEventListener('invalid', cancelPopup, true);
-form.addEventListener('submit', handleSubmit);

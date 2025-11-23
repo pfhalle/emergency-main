@@ -38,11 +38,11 @@
 
   /* Cards */
   --color-card-bg: #ffffff;
-  --color-cta-card-bg: #dff4b00;
+  --color-cta-card-bg:#ff4b00;
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #fffae2;
-  --color-cta-newscard-bg: #dff4b00;
+  --color-news-bg: #fffae2;
+  --color-news-bg-inverted: #dbe2f5;
+  --color-cta-newscard-bg: #ffa680;
   --color-cta-newscard-bg-inverted: #ffa680;
 
   /* Fonts */
