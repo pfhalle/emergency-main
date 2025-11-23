@@ -24,10 +24,13 @@ form {
   display: grid;
   gap: 1rlh;
   padding: 1rlh;
+  background-color: white;
+  border-radius: 37px;
 
   .form-group {
     display: grid;
     gap: 0.1rlh;
+    background-color: white;
   }
 
   label:has(input) {
